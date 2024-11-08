@@ -1,4 +1,5 @@
 import { IAssetDetails } from './assets';
+import { IKpiDetails } from './kpi';
 
 interface IModalBaseProps {
   open: boolean;
@@ -14,4 +15,6 @@ export interface IKpiModalProps extends IModalBaseProps {
   handleSelectChar: (visualId: string) => void;
   subtitle: string;
   assetIcon: string;
+  kpi: IKpiDetails;
+  handleShare: () => void;
 }

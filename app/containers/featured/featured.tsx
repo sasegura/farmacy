@@ -48,14 +48,14 @@ const FeaturedDashboard = () => {
 
   return (
     <Loading loading={loading}>
-      <Section title={'Featured'} subtitle="Curated top picks from this week">
+      <Section title={'Featured'} subtitle='Curated top picks from this week'>
         <AssetsList
           assets={features}
           handleOnClick={handleOnClick}
           cardIcon={'pie.svg'}
         />
       </Section>
-      <Section title={'Trending'} subtitle="Most popular by community">
+      <Section title={'Trending'} subtitle='Most popular by community'>
         <AssetsList
           assets={featuresFav}
           handleOnClick={handleOnClick}
@@ -71,8 +71,8 @@ const FeaturedDashboard = () => {
         handleSelectChar={() => console.log('copy Link')}
         asset={feature ?? null}
         loading={loadingById}
-        subtitle="Featured"
-        assetIcon="pie.svg"
+        subtitle='Featured'
+        assetIcon='pie.svg'
       />
     </Loading>
   );

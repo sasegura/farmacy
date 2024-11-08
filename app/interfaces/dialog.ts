@@ -15,6 +15,6 @@ export interface IKpiModalProps extends IModalBaseProps {
   handleSelectChar: (visualId: string) => void;
   subtitle: string;
   assetIcon: string;
-  kpi: IKpiDetails;
-  handleShare: () => void;
+  kpi?: IKpiDetails;
+  handleShare?: () => void;
 }
